@@ -33,19 +33,46 @@ class CalculateTextField extends StatelessWidget {
 
 class Answer extends StatelessWidget {
   final String answer;
+  final Page page;
 
-  Answer({@required this.answer});
+  Answer({@required this.answer, @required this.page});
 
   @override
   Widget build(BuildContext context) {
+    String prefix;
+    switch (this.page) {
+      case Page.ta:
+        prefix = "Amount";
+        break;
+      case Page.roi:
+        prefix = "Rate of Interest";
+        break;
+      case Page.noy:
+        prefix = "No of years";
+        break;
+      case Page.principal:
+        prefix = "Principal";
+        break;
+      case Page.hybrid:
+        break;
+    }
     if (this.answer != null) {
       return Container(
         margin: EdgeInsets.all(12.0),
-        child: Center(
-          child: Text(
-            this.answer,
-            style: TextStyle(fontSize: 24),
-          ),
+        child: Column(
+          children: <Widget>[
+            Text(
+              prefix,
+              style: TextStyle(fontSize: 18),
+            ),
+            SizedBox(
+              height: 4,
+            ),
+            Text(
+              this.answer,
+              style: TextStyle(fontSize: 30),
+            ),
+          ],
         ),
       );
     } else {

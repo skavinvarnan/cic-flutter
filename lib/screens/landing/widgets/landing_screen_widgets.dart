@@ -28,21 +28,11 @@ class LandingButton extends StatelessWidget {
           height: 100,
           child: Padding(
             padding: const EdgeInsets.all(16.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  this.title,
-                  style: TextStyle(fontSize: 19, color: Colors.white),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 16.0),
-                  child: Text(
-                    this.subTitle,
-                    style: TextStyle(fontSize: 15, color: Colors.white),
-                  ),
-                )
-              ],
+            child: Center(
+              child: Text(
+                this.title,
+                style: TextStyle(fontSize: 22, color: Colors.white),
+              ),
             ),
           ),
         ),
