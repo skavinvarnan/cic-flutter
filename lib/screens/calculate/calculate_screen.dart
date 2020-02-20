@@ -23,7 +23,11 @@ class _CalculateScreenState extends State<CalculateScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(this.getTitle()),
+        title: Text(
+          this.getTitle(),
+          style: TextStyle(color: Colors.white),
+        ),
+        iconTheme: IconThemeData(color: Colors.white),
       ),
       body: GestureDetector(
         onTap: () {
@@ -55,7 +59,7 @@ class _CalculateScreenState extends State<CalculateScreen> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8.0),
                       ),
-                      color: Colors.indigo,
+                      color: Colors.lightBlue,
                       onPressed: () {
                         this.answer = getAnswer(
                           widget.page,

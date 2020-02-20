@@ -21,7 +21,11 @@ class LandingButton extends StatelessWidget {
         padding: EdgeInsets.all(0.0),
         child: Container(
           decoration: BoxDecoration(
-            color: this.bgColor,
+            gradient: LinearGradient(
+              colors: [Colors.lightBlue.shade600, Colors.lightBlue.shade800],
+              begin: Alignment.bottomRight,
+              end: Alignment.topLeft,
+            ),
             borderRadius: BorderRadius.all(Radius.circular(16.0)),
           ),
           width: double.infinity,

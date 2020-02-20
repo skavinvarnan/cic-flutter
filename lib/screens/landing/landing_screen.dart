@@ -10,7 +10,10 @@ class LandingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(this.title),
+        title: Text(
+          this.title,
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       body: Center(
         child: ListView(
@@ -19,7 +22,7 @@ class LandingScreen extends StatelessWidget {
             LandingButton(
               title: "Total Amount Calculator",
               subTitle: "with Principal, ROI and No of Years",
-              bgColor: Colors.indigo.shade600,
+              bgColor: Colors.lightBlue.shade600,
               onPressed: () {
                 openNextScreen(context, Page.ta);
               },
@@ -27,7 +30,7 @@ class LandingScreen extends StatelessWidget {
             LandingButton(
               title: "ROI Calculator",
               subTitle: "with Principal, No of Years and Total Amount",
-              bgColor: Colors.indigo.shade600,
+              bgColor: Colors.lightBlue.shade600,
               onPressed: () {
                 openNextScreen(context, Page.roi);
               },
@@ -35,7 +38,7 @@ class LandingScreen extends StatelessWidget {
             LandingButton(
               title: "Time Period Calculator",
               subTitle: "with Principal, ROI and Total Amount",
-              bgColor: Colors.indigo.shade600,
+              bgColor: Colors.lightBlue.shade600,
               onPressed: () {
                 openNextScreen(context, Page.noy);
               },
@@ -43,7 +46,7 @@ class LandingScreen extends StatelessWidget {
             LandingButton(
               title: "Principal Calculator",
               subTitle: "with ROI, No of Years and Total Amount",
-              bgColor: Colors.indigo.shade600,
+              bgColor: Colors.lightBlue.shade600,
               onPressed: () {
                 openNextScreen(context, Page.principal);
               },
