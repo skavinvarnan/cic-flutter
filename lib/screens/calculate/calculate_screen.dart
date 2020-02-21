@@ -59,7 +59,7 @@ class _CalculateScreenState extends State<CalculateScreen> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8.0),
                       ),
-                      color: Colors.lightBlue,
+                      color: Colors.blue,
                       onPressed: () {
                         this.answer = getAnswer(
                           widget.page,
