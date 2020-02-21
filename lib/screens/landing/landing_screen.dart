@@ -22,7 +22,7 @@ class LandingScreen extends StatelessWidget {
             LandingButton(
               title: "Total Amount Calculator",
               subTitle: "with Principal, ROI and No of Years",
-              bgColor: Colors.lightBlue.shade600,
+              bgColor: Colors.lightBlue,
               onPressed: () {
                 openNextScreen(context, Page.ta);
               },
@@ -30,7 +30,7 @@ class LandingScreen extends StatelessWidget {
             LandingButton(
               title: "ROI Calculator",
               subTitle: "with Principal, No of Years and Total Amount",
-              bgColor: Colors.lightBlue.shade600,
+              bgColor: Colors.lightBlue,
               onPressed: () {
                 openNextScreen(context, Page.roi);
               },
@@ -38,7 +38,7 @@ class LandingScreen extends StatelessWidget {
             LandingButton(
               title: "Time Period Calculator",
               subTitle: "with Principal, ROI and Total Amount",
-              bgColor: Colors.lightBlue.shade600,
+              bgColor: Colors.lightBlue,
               onPressed: () {
                 openNextScreen(context, Page.noy);
               },
@@ -46,7 +46,7 @@ class LandingScreen extends StatelessWidget {
             LandingButton(
               title: "Principal Calculator",
               subTitle: "with ROI, No of Years and Total Amount",
-              bgColor: Colors.lightBlue.shade600,
+              bgColor: Colors.lightBlue,
               onPressed: () {
                 openNextScreen(context, Page.principal);
               },

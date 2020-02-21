@@ -4,7 +4,7 @@ class LandingButton extends StatelessWidget {
   final String title;
   final String subTitle;
   final Function onPressed;
-  final Color bgColor;
+  final MaterialColor bgColor;
 
   LandingButton({
     @required this.title,
@@ -22,9 +22,9 @@ class LandingButton extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [Colors.lightBlue.shade600, Colors.lightBlue.shade800],
-              begin: Alignment.bottomRight,
-              end: Alignment.topLeft,
+              colors: [bgColor.shade600, bgColor.shade800],
+              end: Alignment(-1.0, -2.5),
+              begin: Alignment(1.0, 2.5),
             ),
             borderRadius: BorderRadius.all(Radius.circular(16.0)),
           ),
