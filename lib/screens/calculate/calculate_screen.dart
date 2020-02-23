@@ -68,6 +68,23 @@ class _CalculateScreenState extends State<CalculateScreen> {
                           noyController,
                           totalAmountController,
                         );
+                        if (this.answer == null) {
+                          showDialog(
+                            context: context,
+                            builder: (_) => AlertDialog(
+                              title: Text("Invalid"),
+                              content: Text("Oops!! Please enter valid number"),
+                              actions: <Widget>[
+                                FlatButton(
+                                  child: Text("OK"),
+                                  onPressed: () {
+                                    Navigator.pop(context);
+                                  },
+                                ),
+                              ],
+                            ),
+                          );
+                        }
                         FocusScope.of(context).requestFocus(FocusNode());
                         setState(() {});
                       },
